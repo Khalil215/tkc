@@ -1,14 +1,9 @@
-<script setup>
-import { RouterView } from "vue-router";
-import Headr from "./components/Headr.vue";
-import Footer from "./components/Footer.vue";
-Footer
-</script>
-
 <template>
-  <body className="bg-[#eeeff1] w-screen h-screen overflow-y-scroll font-Montserrat font-medium overflow-x-hidden scrollbar scrollbar-track-black scrollbar-thumb-theme/80" id="layout">
+  <body
+    className="bg-[#eeeff1] w-screen h-screen overflow-y-scroll font-Montserrat font-medium overflow-x-hidden scrollbar scrollbar-track-black scrollbar-thumb-theme/80"
+    id="layout"
+  >
     <div className=" mx-auto relative">
-
       <header>
         <Headr />
       </header>
@@ -16,8 +11,26 @@ Footer
       <RouterView />
 
       <footer>
-        <Footer/>
+        <Footer />
       </footer>
     </div>
   </body>
 </template>
+
+<script setup>
+import { RouterView } from "vue-router";
+import Headr from "./components/Headr.vue";
+import Footer from "./components/Footer.vue";
+import { ref } from "vue";
+import { useSanityClient } from "vue-sanity";
+
+
+useSanityClient({
+  projectId: "qk7bc22o",
+  dataset: "production",
+  apiVersion: '2023-02-01',
+  useCdn: process.env.NODE_ENV === "production",
+});
+
+
+</script>

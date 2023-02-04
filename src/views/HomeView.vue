@@ -1,11 +1,14 @@
 <template>
   <main>
-    <Carousel/>
-    <MenuList/>
+    <Suspense>
+      <AsyncHome />
+      <template #fallback> <HomeSkeleton /> </template>
+    </Suspense>
+    
   </main>
 </template>
 
 <script setup>
-import Carousel from "../components/Carousel.vue"
-import MenuList from "../components/MenuList.vue"
+import AsyncHome from "../components/AsyncComponents/AsyncHome.vue";
+import HomeSkeleton from "../components/SkeletonComponents/HomeSkeleton.vue";
 </script>

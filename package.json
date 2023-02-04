@@ -10,8 +10,13 @@
   "dependencies": {
     "@coreui/coreui": "^4.2.6",
     "@coreui/vue": "^4.6.1",
+    "@sanity/client": "^4.0.1",
+    "@sanity/image-url": "^1.0.2",
+    "@splidejs/vue-splide": "^0.6.12",
+    "sanity-blocks-vue-component": "^1.0.1",
     "vue": "^3.2.45",
-    "vue-router": "^4.1.6"
+    "vue-router": "^4.1.6",
+    "vue-sanity": "^0.12.0"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^4.0.0",

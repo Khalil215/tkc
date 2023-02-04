@@ -7,7 +7,7 @@
           <span><i class="fa-solid fa-arrow-turn-down text-theme"></i></span>
         </p>
         <div class="flex justify-evenly w-full">
-          <div class="relative hover:cursor-pointer">
+          <a :href="data.instagram.url" target="_blank" class="relative hover:cursor-pointer">
             <i class="fa-brands fa-instagram text-4xl text-red-600"></i>
             <span class="absolute -top-1 -right-1 flex h-3 w-3">
               <span
@@ -18,8 +18,8 @@
               ></span>
             </span>
             
-          </div>
-          <div class="relative hover:cursor-pointer">
+          </a>
+          <a :href="data.whatsapp.url" target="_blank" class="relative hover:cursor-pointer">
             <i class="fa-brands fa-whatsapp text-4xl text-green-500"></i>
             <span class="absolute top-0 right-0 flex h-3 w-3">
               <span
@@ -29,7 +29,7 @@
                 class="relative inline-flex rounded-full h-3 w-3 bg-green-500"
               ></span>
             </span>
-          </div>
+          </a>
           
         </div>
         
@@ -38,6 +38,9 @@
     </div>
 </template>
 
-<script setup>
+<script>
+export default {
+  props: ['data'],
+}
 
 </script>

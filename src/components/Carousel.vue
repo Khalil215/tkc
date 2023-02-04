@@ -22,6 +22,41 @@
           alt=""
         />
       </CCarouselItem>
+      <CCarouselItem>
+        <img
+          className=" w-[100%] h-[90vh] object-cover object-center"
+          src="../assets/donss.JPG"
+          alt=""
+        />
+      </CCarouselItem>
+      <CCarouselItem>
+        <img
+          className=" w-[100%] h-[90vh] object-cover object-center"
+          src="../assets/donsss.JPG"
+          alt=""
+        />
+      </CCarouselItem>
+      <CCarouselItem>
+        <img
+          className=" w-[100%] h-[90vh] object-cover object-center"
+          src="../assets/donssss.PNG"
+          alt=""
+        />
+      </CCarouselItem>
+      <CCarouselItem>
+        <img
+          className=" w-[100%] h-[90vh] object-cover object-center"
+          src="../assets/donsssss.PNG"
+          alt=""
+        />
+      </CCarouselItem>
+      <CCarouselItem>
+        <img
+          className=" w-[100%] h-[90vh] object-cover object-center"
+          src="../assets/dno.PNG"
+          alt=""
+        />
+      </CCarouselItem>
     </CCarousel>
   </div>
 </template>
