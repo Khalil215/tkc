@@ -4,15 +4,15 @@
     <ul class="w-full md:mt-14 font-bold">
       <li v-for="price in data.prices" class="w-full flex justify-between mb-4 md:text-lg">
         <span class="tracking-wide w-[70%]">{{price.item}}</span
-        ><span class="tracking-tighter w-[30%]"> ----------- &#8358;{{price.price}} </span>
+        ><span class="tracking-tighter w-[30%]"> ------  &#8358;{{price.price}} </span>
       </li>
     </ul>
     <div v-if="data.extras">
       <p class="text-2xl font-bold mt-10 text-center">{{data.extras}}</p>
-      <ul class="w-full font-bold">
+      <ul class="w-full font-bold mt-5">
         <li v-for="price in data.extrasList" class="w-full flex justify-between mb-4 md:text-lg">
           <span class="tracking-wide w-[70%]">{{price.item}}</span
-          ><span class="tracking-tighter w-[30%]"> ----------- &#8358;{{price.price}} </span>
+          ><span class="tracking-tighter w-[30%]"> ------ &#8358;{{price.price}} </span>
         </li>
       </ul>
     </div>

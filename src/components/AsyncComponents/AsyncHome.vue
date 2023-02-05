@@ -24,7 +24,7 @@
     <p class="font-bold text-2xl md:text-3xl">Our Menu</p>
     <div class="mt-8 flex flex-wrap justify-around">
       <div v-for="menu in data.menu" :key="data.menu.title" @click="showItem(menu)"
-        class="relative h-48 w-52 md:w-64 md:h-60 shadow-2xl rounded-3xl hover:cursor-pointer hover:scale-105 transition justify-self-center mb-8"
+        class="relative h-36 w-40 md:w-64 md:h-60 shadow-2xl rounded-3xl hover:cursor-pointer hover:scale-105 transition justify-self-center mb-8"
       >
         <img
           class=" w-full h-full object-cover object-center rounded-3xl"

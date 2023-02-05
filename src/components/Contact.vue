@@ -1,12 +1,12 @@
 <template>
-  <div class="flex justify-end mr-10 mt-5">
+  <div class="flex justify-end mr-3 md:mr-10 mt-10">
       <div class=" flex flex-col gap-3 items-center ">
         
-        <p class="font-bold tracking-widest">
+        <p class="font-bold tracking-wider">
           Contact to Pre-Order
           <span><i class="fa-solid fa-arrow-turn-down text-theme"></i></span>
         </p>
-        <div class="flex justify-evenly w-full">
+        <div class="flex md:justify-evenly justify-end gap-8 md:gap-0 w-full">
           <a :href="data.instagram.url" target="_blank" class="relative hover:cursor-pointer">
             <i class="fa-brands fa-instagram text-4xl text-red-600"></i>
             <span class="absolute -top-1 -right-1 flex h-3 w-3">

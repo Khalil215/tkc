@@ -5,7 +5,7 @@
         <RouterLink :to="{ name: 'home' }">
             
               <img
-                class="ml-8 mt-3 md:mt-6 w-[200px] h-[150px] md:w-[250px] md:h-[200px] object-cover"
+                class="md:ml-8 mt-3 md:mt-6 w-[170px] h-[130px] md:w-[250px] md:h-[200px] object-cover"
                 :src="imageUrlFor(data.image)"
                 alt=""
               />
