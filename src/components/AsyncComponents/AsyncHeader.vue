@@ -15,7 +15,7 @@
     </div>
 
 
-  <div class="w-full bg-theme mt-4 text-center text-white py-1">
+  <div class="w-full bg-theme mt-4 text-center text-white py-1 text-sm">
     <i class="fa-solid fa-bell"></i> {{ data.message }}
   </div>
 </template>
