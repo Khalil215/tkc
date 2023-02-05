@@ -8,12 +8,18 @@ const router = createRouter({
     {
       path: '/',
       name: 'home',
-      component: HomeView
+      component: HomeView,
+      meta:{
+        title:"Home"
+      }
     },
     {
       path: '/menu/:slug',
       name: 'item',
-      component: ItemView
+      component: ItemView,
+      meta:{
+        title:"Menu"
+      }
     },
     {
       path: '/:catchAll(.*)',
@@ -30,5 +36,7 @@ const router = createRouter({
     }
   },
 })
+
+
 
 export default router
