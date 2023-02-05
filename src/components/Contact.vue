@@ -1,6 +1,6 @@
 <template>
-  <div className="flex justify-end mr-10 mt-5">
-      <div className=" flex flex-col gap-3 items-center ">
+  <div class="flex justify-end mr-10 mt-5">
+      <div class=" flex flex-col gap-3 items-center ">
         
         <p class="font-bold tracking-widest">
           Contact to Pre-Order

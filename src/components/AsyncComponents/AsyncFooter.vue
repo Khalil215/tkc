@@ -2,9 +2,9 @@
   <div class="mt-10 bg-black text-white">
     <hr class="border-2 border-theme mt-4" />
     <div
-      className="display md:flex grid gap-5 md:justify-between mt-4  bg-opacity-30 rounded p-3"
+      class="display md:flex grid gap-5 md:justify-between mt-4  bg-opacity-30 rounded p-3"
     >
-      <div className="grid gap-2">
+      <div class="grid gap-2">
         <p class="text-2xl font-bold text-theme mb-2 md:text-center">
           Contact Us
         </p>
@@ -18,10 +18,10 @@
           <i class="fa-solid fa-truck"></i><span> Delivery available</span>
         </div>
       </div>
-      <div className="grid gap-2">
+      <div class="grid gap-2">
         <p class="text-2xl font-bold text-theme mb-2 md:text-center">T.K.C</p>
         <p class="italic">{{ data.slogan }}</p>
-        <hr class="border-2 border-theme w-52 my-1" />
+        <hr class="border-2 border-theme w-52 my-1 rounded" />
         <div class="flex md:justify-center gap-4 ml-4">
           <a :href="data.instagram.url" target="_blank" class="hover:text-theme"
             ><i class="fa-brands fa-instagram text-2xl hover:cursor-pointer"></i
@@ -31,7 +31,7 @@
           ></a>
         </div>
       </div>
-      <div className="grid gap-2 md:mr-2">
+      <div class="grid gap-2 md:mr-2">
         <p class="text-2xl font-bold text-theme mb-2 md:text-center">
           Working Hours
         </p>

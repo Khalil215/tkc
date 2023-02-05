@@ -1,5 +1,5 @@
 <template>
-  <div v-show="show" class="mt-3">
+  <div class="mt-3">
     <Splide
       aria-labelledby="menu-carousel"
       :options="options"
@@ -9,7 +9,7 @@
         <SplideTrack>
           <SplideSlide v-for="carousel in data.carousel" :key="carousel._key">
             <img
-              className=" w-[100%] h-[90vh] object-cover object-center"
+              class=" w-[100%] h-[90vh] object-cover object-center"
               :src="imageUrlFor(carousel)"
               alt=""
             />
@@ -19,15 +19,15 @@
     </Splide>
   </div>
 
-  <div v-show="show" class="md:mx-[15%] mx-[5%] mt-4">
-    <hr class="border-2 border-theme mb-3" />
+  <div class="md:mx-[15%] mx-[5%] mt-4">
+    <hr class="border-2 border-theme mb-3 rounded" />
     <p class="font-bold text-2xl md:text-3xl">Our Menu</p>
     <div class="mt-8 flex flex-wrap justify-around">
       <div v-for="menu in data.menu" :key="data.menu.title" @click="showItem(menu)"
         class="relative h-48 w-52 md:w-64 md:h-60 shadow-2xl rounded-3xl hover:cursor-pointer hover:scale-105 transition justify-self-center mb-8"
       >
         <img
-          className=" w-full h-full object-cover object-center rounded-3xl"
+          class=" w-full h-full object-cover object-center rounded-3xl"
           :src="imageUrlFor(menu.image)"
           alt=""
         />
@@ -75,7 +75,6 @@ const showItem = (menu) => {
 
 //Data fetch
 let data = ref({});
-let show = ref(false);
 const homeGroq = "*[ _type=='home'][0]{...,menu[]->}"
 const fetchData = async () => {
   try {

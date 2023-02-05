@@ -1,16 +1,16 @@
 <template >
   <main class="md:mx-[15%] mx-[5%] relative" >
-    <div className="grid md:grid-cols-3 gap-10 mt-10">
-      <div className="md:col-start-1 md:col-end-2">
+    <div class="grid md:grid-cols-3 gap-10 mt-10">
+      <div class="md:col-start-1 md:col-end-2">
         <img
-          className="w-[290px] h-[250px] object-cover shadow-2xl rounded-3xl border-4 border-black"
+          class="w-[290px] h-[250px] object-cover shadow-2xl rounded-3xl border-4 border-black"
           :src="imageUrlFor(data.image)"
           alt=""
         />
       </div>
       <PriceList :data="data"/>
     </div>
-    <div className=" flex overflow-x-scroll gap-6 mt-10 scrollbar-track-black scrollbar-thumb-theme scrollbar-thin p-5">
+    <div class=" flex overflow-x-scroll gap-6 mt-10 scrollbar-track-black scrollbar-thumb-theme scrollbar-thin p-5">
       <img v-for="image in data.carousel"
         class=" w-[290px] h-[250px] object-cover shadow rounded-3xl min-h-0 "
         :src="imageUrlFor(image)"

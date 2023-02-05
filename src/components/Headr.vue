@@ -7,7 +7,7 @@
   </Suspense>
   
   <div class="md:mx-[15%] mx-[5%]">
-    <hr class="border-2 border-theme mt-2" />
+    <hr class="border-2 border-theme mt-2 rounded" />
   </div>
 </template>
 
