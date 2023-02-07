@@ -80,7 +80,7 @@ const fetchData = async () => {
   try {
     data.value = await sanity.fetch(homeGroq);
     // console.log(data.value.menu)
-    show.value = true
+    // show.value = true
   } catch (error) {
     console.log(error);
   }
